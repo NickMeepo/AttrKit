@@ -14,7 +14,7 @@ let attrString = "Welcom to use AttrKit.".attr
 
 ### Supports
 
-1. Starting a chain from a String / NSString / NSAttributedString / NSTextAttachment / html string / rtf & rtfd data. 
+1. Starting a chain from a String / NSString / NSAttributedString / NSTextAttachment / HTML string / RTF & RTFD data. 
 
 2. Setting font, text, paragraph attributes.
 
@@ -28,9 +28,9 @@ let attrString = "Welcom to use AttrKit.".attr
 
 7. Reusable attribute style.
 
-8. Transformation from and to HTML.
+8. Transformation from and to HTML string.
 
-9. Transformation from and to RTF & RTFD.
+9. Transformation from and to RTF & RTFD data.
 
 10. Fixing and removing attributes in a chain.
 
