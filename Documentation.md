@@ -619,6 +619,7 @@ _ = "atext".attr
     .strikethrough()
 
     // on range of "a"
+    .fromHere()
     .background(color: .red)
     .underline()
     .kern(0.5)
