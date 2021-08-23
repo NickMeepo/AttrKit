@@ -656,6 +656,14 @@ NSTextTab is never used before. The effect of NSTextTab is still testing.
 ### Version
 0.1.0
 
+### Installation
+
+You can install AttrKit by using Cocoapods:
+
+```ruby
+pod 'AttrKit'
+```
+
 ### Requirement
 
 - iOS 11.0+ / Mac OS X 10.15+ / tvOS 11.0+
