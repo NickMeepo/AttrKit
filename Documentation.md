@@ -657,4 +657,9 @@ NSTextTab is never used before. The effect of NSTextTab is still testing.
 0.1.0
 
 ### Requirement
-Swift 5
+
+- iOS 11.0+ / Mac OS X 10.15+ / tvOS 11.0+
+
+- Xcode 10.0+
+
+- Swift 5.0+

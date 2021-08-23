@@ -22,6 +22,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/NickMeepo/AttrKit.git", :tag => s.version.to_s, :submodules => true}
 
   s.ios.deployment_target = '11.0'
+  s.osx.deployment_target = '10.15'
+  s.tvos.deployment_target = '11.0'
 
   s.swift_version = '5.0'
 
