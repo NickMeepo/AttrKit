@@ -2,9 +2,9 @@
 
 A chain to generate NSAttributedString.
 
-### Example:
+### Example
 ```swift
-let attrString = "Welcom to use AttrKit.".attr
+let attrString = "Welcome to use AttrKit.".attr
     .foreground(color: .darkGray)
     .systemFont(size: 17)
     .foreground(color: .red)
