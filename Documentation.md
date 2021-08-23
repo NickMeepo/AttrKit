@@ -545,7 +545,7 @@ let attr2 = AttrRTFD(rtfdData).attr.result()
 ### Other Functions
 1. fix function
 
-fixAttributes method of NSMutableAttributedString are supported in the chain by *fixed function*, which can work with *from function* and *range functions*:
+fixAttributes method of NSMutableAttributedString are supported in the chain by *fixed function*, which can work with *fromHere function* and *range functions*:
 
 ```swift
 _ = "AttrKit".attr
@@ -560,7 +560,7 @@ _ = "AttrKit".attr
 
 2. erased function
 
-removeAttribute method of NSMutableAttributedString are supported in the chain by *erased function*, which can work with *from function* and *range functions*:
+removeAttribute method of NSMutableAttributedString are supported in the chain by *erased function*, which can work with *fromHere function* and *range functions*:
 
 ```swift
 _ = "AttrKit with underline erased".attr
@@ -629,6 +629,7 @@ _ = "atext".attr
 ```
 
 3. Emojii Supported
+
 We have tested range functions with text containing emojii. In same language such as Chinese, index of emojii text like "😊你好" may have different meaning. Difference between text encoding of String and NSString results in it. And AttrKit have fixed this problem.
 
 ### Existence Flaws
