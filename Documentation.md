@@ -13,6 +13,7 @@ let attrString = "Welcom to use AttrKit.".attr
 ```
 
 ### Start a Chain
+
 Basically, you can start an attr chain from 4 types data: String/NSString/NSAttributedString/NSTextAttachment:
 
 ```swift 
@@ -44,7 +45,18 @@ AttrRtfd(data)?.attr
 
 After starting a chain, we can set font, text, paragraph attributes on text. We call functions setting font, text, paragraph attributes as *attribute functions*. 
 
+### Get NSAttributedString
+
+Use result() to finalize the chain and get the final NSAttributedString.
+
+```swift
+attributedString = "AttrKit".attr
+    .systemFont(size: 17)
+    .result()
+```
+
 ### Font Attributes
+
 Use following functions to set font attributes:
 
 ```swift
@@ -105,6 +117,7 @@ _ = "AttrKit".attr
 ```
 
 ### Text Attributes
+
 Use following functions to set text attributes:
 
 ```swift
@@ -166,6 +179,7 @@ _ = "AttrKit".attr
 ```
 
 ### Paragraph Attributes
+
 Use following functions to set paragraph attributes.
 
 ```swift
@@ -214,6 +228,7 @@ _ = "AttrKit".attr
 ```
 
 ### Range Setting
+
 In the following example, we get a attributed string with textColor red on whole range of the text:
 
 ```swift
@@ -267,6 +282,7 @@ There are several functions to indicate ranges where given attributes are set. W
 ```
 
 ### Combination of Chains
+
 AttrKit supports combination of different chains in the way of appending、prepending and inserting:
 
 ```swift
@@ -354,6 +370,7 @@ _ = chain.insert(image: UIImage(named: "tag")!, bounds: CGRect(origin: .zero, si
 Functions like append, prepend, insert are called as *combination functions.*
 
 ### Usage of fromHere
+
 When using *range function* to add multiple attributes on same ranges, you could write:
 
 ```swift
@@ -428,6 +445,7 @@ _ = "AttrKit".attr
 ```
 
 ### Usage of AttrStyle
+
 In some cases we want to get a dictionary of type **[NSAttributedString.Key: Any]**. AttrKit use **AttyStyle chain** to generate this dictionary. **AttyStyle** link each chain node using *attribute functions*. **AttyStyle chain** doesn`t support *combination functions* and *range functions*. Function attributes() finalizes the chain and return the final dictionary.
 
 The following example of setting UITextView`s linkTextAttributes shows the usage of AttrStyle:
@@ -472,6 +490,7 @@ textView.attributedText = "This is a string with Link.".attr
 Notice that *style function* can also work with *fromHere function* and *range functions*.
 
 ### Transformation From and To HTML
+
 Sometimes annoying backend engineers may want you to transform html string to NSAttributedString and show it. AttrKit meets this demand by usage of **AttrHTML**:
 
 ```swift
@@ -502,6 +521,7 @@ let htmlString = "AttrKit".attr
 *Notice:* You should also notice that font size unit in NSAttributedString is pt, but in transformed html string the font size unit is px with the same value.
 
 ### Transformation From and To RTF & RTFD
+
 AttrKit supports transformation from NSAttributedString to RTF & RTFD:
 
 ```swift
@@ -543,6 +563,7 @@ let attr2 = AttrRTFD(rtfdData).attr.result()
 ```
 
 ### Other Functions
+
 1. fix function
 
 fixAttributes method of NSMutableAttributedString are supported in the chain by *fixed function*, which can work with *fromHere function* and *range functions*:
@@ -653,6 +674,7 @@ AttrKit is a framework which is inspired by SnapKit. Some flaws still exists and
 ```
 
 2. Lack of testing NSTextTab
+
 NSTextTab is never used before. The effect of NSTextTab is still testing.
 
 ### Version
