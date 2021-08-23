@@ -36,7 +36,10 @@ let attrString = "Welcom to use AttrKit.".attr
 
 11. Lower calling of addAttributes function.
 
-12. Supporting text containing Emojii. 
+12. Supporting text containing Emojii.
+
+### Documentation
+[Link](https://github.com/NickMeepo/AttrKit/blob/main/Documentation.md)
 
 ### Version
 0.1.0
