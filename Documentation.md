@@ -634,7 +634,7 @@ We have tested range functions with text containing emojii. In same language suc
 
 AttrKit is a framework which is inspired by SnapKit. Some flaws still exists and we list as follows. 
 
-1. Coutinus text with sub paragraph style will be covered.
+1. Continious text with sub paragraph style will be covered.
 
 ```swift
 // In this example, alignment of "456" will be lost.
